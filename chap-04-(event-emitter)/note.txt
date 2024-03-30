@@ -1,0 +1,18 @@
+
+In Node.js, an Event Emitter is a built-in module that allows objects to emit and listen for events. It's like a communication system where one part of your code (the emitter) can send signals about something happening, and other parts (the listeners) can react to those signals.
+
+Here's a simplified explanation:
+
+Emitter: An object that can emit (send out) events. You can think of it as a broadcaster that announces when something interesting occurs.
+
+Listener: An object or function that listens for specific events emitted by the emitter. When the event occurs, the listener reacts by executing its associated code.
+
+Event: A named signal that the emitter sends out. Events can carry additional data or information about what happened.
+
+For example, let's say you have a temperature sensor that emits events when the temperature changes:
+
+Emitter: The temperature sensor object is the emitter. It emits events like "temperatureChanged" with data such as the new temperature value.
+
+Listeners: You have different parts of your code that listen for the "temperatureChanged" event. For instance, you might have a function that logs the new temperature to the console or updates a display on a web page.
+
+Event: When the temperature changes, the emitter emits a "temperatureChanged" event. All the listeners that are interested in this event get notified and perform their respective actions.
